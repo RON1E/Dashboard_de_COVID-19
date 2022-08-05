@@ -11,6 +11,10 @@ from matplotlib.figure import Figure
 import numpy as np
 import pandas as pd
 
+# ---------------------------------------------------------------------------------------------------------------------
+
+from dados import *
+
 
 # ----------------------------------- criando janela ----------------------------------
 
@@ -245,5 +249,6 @@ app_categoria.grid(row=0, column=0, pady=0,
                    padx=20, columnspan=2, sticky=NSEW)
 canva_cont = FigureCanvasTkAgg(figura, frame_categoria)
 canva_cont.get_tk_widget().grid(row=1, column=0, sticky=NSEW)
+
 
 janela.mainloop()
